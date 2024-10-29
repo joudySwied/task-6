@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Prata", serif;
+}
+ /* general classes */
+
+ .active,
+ .f-orange {
+   color: #d2ad8b !important;
+ }
+
+ .f-brown {
+  color: #b89677 !important;
+}
+
+.fs-huge {
+  font-size: 80px;
+}
+.fs-big {
+  font-size: 50px;
+}
+
+.border-orange {
+  border: 1px solid #e1b994 !important;
+}
+.border-brown {
+  border: 1px solid #b89677 !important;
+}
+.fs-verySmall {
+  font-size: 12px;
+}
+
+.linetitle{
+  height: 2px;
+}
+
+/* hero */
+
+.logo {
+  width: 200px;
+}
+
+.hero {
+  height: calc(100vh - 80px);
+  position: relative;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  position: absolute;
+  top: 50%;
+
+  transform: translateY(-50%);
+  padding: 0px;
+  width: 50px;
+  height: 50px;
+  left: 20px;
+  border: 2px solid #ddd;
+  border-radius: 50%;
+}
+.carousel-control-next {
+  left: initial;
+  right: 20px;
+}
+
+/* Featured Books */
+
+.cursor {
+  cursor: pointer;
+ }
+ .addtocart {
+  opacity: 0;
+  transition: 0.5s all linear;
+  cursor: pointer;
+}
+.card:hover .addtocart{
+  opacity: 1;
+}
+
+/* Best Selling Book */
+
+.smallLine {
+  width: 50px;
+  height: 3px;
+  background-color: #71612b;
+}
+/* popular books */
+
+.activeli {
+  font-weight: bold !important;
+  color: black !important;
+  border-bottom: 2px solid #71612b;
+  padding-bottom: 2px;
+}
+ 
+/* icons of footer */
+.fa-facebook-f:hover {
+  color: blue !important;
+  font-size: 20px !important;
+}
+.fa-twitter:hover {
+  color: rgb(137, 218, 232) !important;
+  font-size: 20px !important;
+}
+.fa-youtube:hover {
+  color: rgb(215, 58, 58) !important;
+  font-size: 20px !important;
+}
+.fa-behance:hover {
+  color: rgb(96, 96, 214) !important;
+  font-size: 20px !important;
+}
+
+
+@media screen and (max-width: 768px) {
+  .logo {
+    width: 150px;
+  }
+  .fs-huge {
+    font-size: 50px;
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    top: 20%;
+    transform: translateY(-50%);
+  }
+  .img-hero {
+    width: 75% !important;
+    max-height: calc(100vh - 150px);
+    object-fit: cover;
+    width: auto !important;
+  }
+  .hero {
+    height: auto;
+  }
+  .fs-big {
+    font-size: 30px;
+    width: 100% !important;
+  }
+  .imgbest {
+    width: 90% !important;
+  }
+
+}
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  .fs-huge {
+    font-size: 40px;
+    padding-top: 60px;
+  }
+  .imgbest {
+    width: 90% !important;
+  }
+  .fs-big {
+    font-size: 30px;
+    width: 100% !important;
+  }
+  .inputEmail {
+    font-size: 16px !important;
+  }
+}
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+  .fs-big {
+    font-size: 40px;
+    width: 100% !important;
+  }
+  .imgbest {
+    width: 80% !important;
+  }
+  .fs-huge {
+    font-size: 60px;
+  }
+
+  .inputEmail {
+    font-size: 16px !important;
+  }
+}
+
+
